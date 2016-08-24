@@ -1,5 +1,11 @@
+.wrap {
+  .container();
+}
+
 .btn {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 400px;
   height: 43px;
 
@@ -10,4 +16,15 @@
   border-radius: 50px;
   background-color: @active-color;
   box-shadow: 0 2px 0 rgba(102, 4, 1, .75);
+}
+
+.btn--s {
+  width: 250px;
+}
+
+.h1 {
+  margin-bottom: 40px;
+
+  color: @active-color;
+  font-size: 45px;
 }
