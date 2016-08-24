@@ -2,6 +2,10 @@
   .container();
 }
 
+/*
+ * buttons
+ */
+
 .btn {
   display: flex;
   align-items: center;
@@ -22,9 +26,37 @@
   width: 250px;
 }
 
+/*
+ * headings
+ */
+
 .h1 {
   margin-bottom: 40px;
 
   color: @active-color;
   font-size: 45px;
+}
+
+/*
+ * form
+ */
+
+.input {
+  width: 360px;
+  height: 47px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+
+  border: 2px solid @active-color;
+  border-radius: 50px;
+}
+
+textarea {
+  width: 540px;
+  height: 260px;
+  padding: 20px 30px;
+
+  border: 2px solid @active-color;
+  border-radius: 20px;
+  resize: vertical;
 }

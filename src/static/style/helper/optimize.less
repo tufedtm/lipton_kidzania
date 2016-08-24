@@ -322,15 +322,6 @@
 //  -webkit-appearance: none;
 //}
 //
-///**
-// * Define consistent border, margin, and padding.
-// */
-//
-//fieldset {
-//  border: 1px solid #c0c0c0;
-//  margin: 0 2px;
-//  padding: 0.35em 0.625em 0.75em;
-//}
 //
 ///**
 // * 1. Correct `color` not being inherited in IE 8/9/10/11.
@@ -611,7 +602,7 @@ h1, h2, h3, h4, h5, h6, p
   //small, strike, strong, sub, sup, tt, var,
   //b, u, i, center,
   //dl, dt, dd, ol, ul, li,
-  //fieldset, form, label, legend,
+  //form, label, legend,
   //table, caption, tbody, tfoot, thead, tr, th, td,
   //article, aside, canvas, details, embed,
   //figure, figcaption, footer, header, hgroup,
@@ -676,15 +667,15 @@ input[type=submit]
 
 *,
 *:before,
-*:after{
+*:after {
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
 }
 
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
@@ -692,7 +683,7 @@ a{
 a,
 button,
 input,
-textarea{
+textarea {
   outline: none;
 }
 
@@ -701,7 +692,13 @@ table {
   border-spacing: 0;
 }
 
-textarea{
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+textarea {
   resize: vertical;
 }
 
