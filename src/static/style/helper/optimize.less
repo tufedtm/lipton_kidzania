@@ -385,14 +385,11 @@
 //*/
 ///* HTML5 display-role reset for older browsers */
 //article, aside, details, figcaption, figure,
-//footer, header, hgroup, menu, nav, section {
+//footer, header, menu, nav, section {
 //  display: block;
 //}
 //body {
 //  line-height: 1;
-//}
-//ol, ul {
-//  list-style: none;
 //}
 //blockquote, q {
 //  quotes: none;
@@ -429,9 +426,6 @@
 //  text-decoration: none;
 //}
 //
-//
-//
-//
 //*{
 //  outline: none;
 //  border: none;
@@ -439,32 +433,6 @@
 //a{
 //  text-decoration: none;
 //}
-//
-//
-//
-///* HTML5 display-role reset for older browsers */
-//article, aside, details, figcaption, figure,
-//footer, header, menu, nav, section {
-//  display: block;
-//}
-//body {
-//  line-height: 1;
-//}
-//ul {
-//  list-style: none;
-//}
-//blockquote, q {
-//  quotes: none;
-//}
-//blockquote:before, blockquote:after,
-//q:before, q:after {
-//  content: '';
-//  content: none;
-//}
-//
-//
-//
-//
 //
 //
 //
@@ -718,6 +686,7 @@ body{
 
 a{
   color: inherit;
+  text-decoration: none;
 }
 
 a,
@@ -736,6 +705,8 @@ textarea{
   resize: vertical;
 }
 
-ul{
+ol, ul {
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
