@@ -6,9 +6,7 @@ import runSequence from 'run-sequence'
 
 gulp.task('gh_pages:src', function() {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages({
-      remoteUrl : 'https://github.com/tufedtm/perfect_fit.git'
-    }));
+    .pipe(ghPages());
 });
 
 gulp.task('gh_pages', function () {
