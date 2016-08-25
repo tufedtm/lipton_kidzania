@@ -1,5 +1,4 @@
 .faq-wrap {
-  min-height: 600px;
   .wrap {
     display: flex;
     justify-content: space-between;
@@ -22,6 +21,9 @@
     position: relative;
     margin-bottom: 30px;
     padding-top: 40px;
+
+    font-weight: 900;
+    text-transform: uppercase;
 
     &::before {
       content: '';
@@ -59,6 +61,7 @@
 
 .faq__content {
   .container();
+  margin-bottom: 200px;
   position: relative;
   padding-left: 30px;
 
@@ -70,6 +73,7 @@
   padding-right: 15px;
   color: @active-color;
   font-size: 20px;
+  font-weight: 600;
   &.active {
     color: #8b1511;
     .faq__question {
@@ -130,5 +134,7 @@
 
   color: #1e1e1e;
   font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
   white-space: pre-line;
 }
