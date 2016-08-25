@@ -1115,10 +1115,14 @@ body::before {
 .popup-forms [type=submit] {
   margin-bottom: 0;
 }
+.popup-left {
+  margin-right: auto;
+}
 .popup-left,
 .popup-right {
   position: relative;
   max-width: 400px;
+  width: 100%;
 }
 .reg-form input[type=email] {
   width: 165px;
