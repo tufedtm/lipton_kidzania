@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Главная</title>
+
+  <link href="static/css/app.css" rel="stylesheet"/>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <img src="static/img/logo.png" alt="lipton kidzania logo">
+  </a>
+
+  <nav class="header-nav ">
+    <ul>
+      <li><button class="header-nav__item" data-js-popup-link="cheque-reg">Регистрация чека</button></li>
+      <li><a class="header-nav__item current" href="rules.html">Правила и призы</a></li>
+      <li><a class="header-nav__item" href="faq.html">FAQ</a></li>
+      <li><a class="header-nav__item" href="winners.html">Победители</a></li>
+      <li>
+        <button class="header-nav__item" data-js-popup-link="auth-form">Вход</button>
+        <span class="user-icon"></span>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+<div class="index-hero-wrap">
+
+  <div class="index-hero">
+
+    <div class="index-hero__text">
+      <p>Выиграй  билет</p>
+      <p>в кидзанию</p>
+      <p>на фабрику чая Lipton</p>
+    </div>
+
+    <button class="btn index-hero__btn" data-js-popup-link="cheque-reg">Зарегистрировать чек</button>
+
+    <ul class="index-hero__list">
+      <li>
+        <strong>Купи</strong>
+        <span>с 05.09.16 по 02.10.16</span> не менее 2 пачек чая Lipton Discovery Collection в магазинах «Перекресток» или «Карусель»*
+      </li>
+      <li>
+        <strong>Зарегистрируй</strong>
+        чек на сайте <a href="//liptonkidz.ru">liptonkidz.ru</a>
+      </li>
+      <li>
+        <strong>Получи</strong>
+        возможность выиграть билет в Кидзанию
+      </li>
+    </ul>
+
+  </div>
+
+</div>
+
+
+<footer class="site-footer">
+  <div class="site-footer__content">
+    <p>*Организатор Акции: ООО «Темма», 109004, г. Москва, ул. Александра Солженицына, 23А строение 1.</p>
+    <p>Общий срок Акции: с 05.09.2016 года по 02.10.2016 года.</p>
+    <p>С 05.09.2016 года по 02.10.2016 года (срок подачи заявок) совершите покупку в магазинах Торговой сети «Перекресток» или «Карусель», участвующих в Акции, и зарегистрируйте номер чека на сайте www.liptonkidz.ru. При покупке не менее 2 пачек чая Lipton, участвующих в Акции, Участник принимает участие в розыгрыше приза «Билет в Кидзанию».</p>
+    <p>Количество подарков и призов ограничено. Организатор оставляет за собой право на замену подарков и призов. Внешний вид подарков и призов может отличаться от изображений в рекламных материалах. Подробную информацию об организаторе Акции, правилах их проведения, количестве подарков и призов, сроках, месте и порядке их получения — на сайте
+      <a href="//liptonkidz.ru">liptonkidz.ru</a>.</p>
+    <p>В каждом чеке должно присутствовать не менее 2 пачек чая Lipton, участвующих в Акции.</p>
+  </div>
+</footer>
+
+<div class="popup-wrap" data-js-popup-item="cheque-reg">
+
+  <div class="popup-content">
+
+    <p class="popup-heading popup-heading--cheque-reg">Регистрация чека</p>
+
+    <form>
+
+      <div class="popup-forms">
+
+        <div class="popup-left">
+          <span class="cheque-reg__step">1.</span>
+          <input class="input" type="text" placeholder="Введите номер чека" required>
+        </div>
+
+        <div class="popup-right">
+          <span class="cheque-reg__shop-text"><span class="cheque-reg__step">2.</span>Выберите магазин, в котором была совершена покупка</span>
+          <div class="cheque-reg__shops">
+
+            <label class="cheque-reg__shop">
+              <input type="radio" name="shop" required>
+              <span>
+                <img src="static/img/del/cheque1.jpg">
+              </span>
+            </label>
+            <label class="cheque-reg__shop">
+              <input type="radio" name="shop" required>
+              <span>
+                <img src="static/img/del/cheque2.jpg">
+              </span>
+            </label>
+
+          </div>
+
+          <input class="btn btn--s cheque-reg__btn" type="submit" value="Продолжить">
+        </div>
+
+      </div>
+
+    </form>
+
+    <button class="popup-close" data-js-popup-close></button>
+
+  </div>
+
+</div>
+
+<div class="popup-wrap" data-js-popup-item="auth-form">
+
+  <div class="popup-content">
+
+    <div class="popup-forms">
+
+      <div class="popup-left">
+        <p class="popup-heading">Вход</p>
+
+        <form class="auth-form">
+          <input class="input input--l" type="email" placeholder="Email" required>
+          <input class="input input--l" type="password" placeholder="Пароль" required>
+          <a href="">Забыли пароль?</a>
+
+          <input class="btn btn--s" type="submit" value="Войти">
+        </form>
+      </div>
+
+      <div class="popup-right">
+        <p class="popup-heading">Регистрация</p>
+
+        <form class="reg-form">
+          <input class="input input--l" type="text" placeholder="Ф.И.О." required>
+          <input class="input" type="email" placeholder="Email" required>
+          <input class="input" type="tel" placeholder="Номер телефона" required>
+          <input class="input input--l" type="password" placeholder="Пароль" required>
+
+          <input class="btn" type="submit" value="Зарегистрироваться">
+        </form>
+      </div>
+
+    </div>
+
+    <div class="popup-soc-auth">
+      <p>Вход и регистрация через соцсети:</p>
+
+      <a href="">vk</a>
+      <a href="">fb</a>
+      <a href="">ok</a>
+    </div>
+
+    <button class="popup-close" data-js-popup-close></button>
+
+  </div>
+
+</div>
+
+<div class="reg-complete" style="display:none;">
+  <p>Для завершения регистрации нажмите на ссылку <br> в отправленном Вам письме</p>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="static/lib/jquery.min.js"><\/script>')</script>
+<script src="static/lib/jquery.maskedinput.min.js"></script>
+<script src="static/lib/jquery.formstyler.min.js"></script>
+<script src="static/js/app.js"></script>
+
+</body>
+</html>

@@ -1,10 +1,11 @@
-$(() => {
+'use strict';
+
+$(function () {
 
   /**
    * mask for input type tel
    */
   $('input[type=tel]').mask('+7 (999) 999-99-99');
-
 
   /**
    * form styler
@@ -15,7 +16,6 @@ $(() => {
     fileBrowse: 'Загрузить фото'
   });
 
-
   /**
    * faq ask add
    */
@@ -23,22 +23,20 @@ $(() => {
     $('[data-js-faq-ask-add-form]').toggleClass('active');
   });
 
-
   /**
    * faq accord
    */
   $('.faq__question').on('click', function () {
-    $(this).parent().toggleClass('active')
+    $(this).parent().toggleClass('active');
   });
-
 
   /**
    * pop-up
    */
-  function showPopUp (name) {
+  function showPopUp(name) {
     $('[data-js-popup-item=' + name + ']').addClass('active');
   }
-  function hidePopUp () {
+  function hidePopUp() {
     $('[data-js-popup-item]').removeClass('active');
   }
 
@@ -56,5 +54,5 @@ $(() => {
       hidePopUp();
     }
   });
-
 });
+//# sourceMappingURL=app.js.map
