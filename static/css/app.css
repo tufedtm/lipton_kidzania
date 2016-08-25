@@ -259,6 +259,62 @@ textarea {
   border-radius: 50px;
   border: 2px solid #d51f1a;
 }
+/*
+ * parallax
+ */
+.wrap_center {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.parallax {
+  position: relative;
+  height: 0;
+}
+.parallax div {
+  position: absolute;
+}
+.parallax img {
+  position: absolute;
+  z-index: 500;
+}
+.parallax_1 {
+  left: -295px;
+}
+.parallax_1 img {
+  width: 232px;
+}
+.parallax_2 {
+  right: -45px;
+}
+.parallax_2 img {
+  width: 86px;
+}
+.parallax_3 {
+  left: -110px;
+}
+.parallax_3 img {
+  width: 79px;
+}
+.parallax_4 {
+  right: -80px;
+}
+.parallax_4 img {
+  width: 294px;
+}
+.parallax_5 {
+  left: -265px;
+}
+.parallax_5 img {
+  width: 94px;
+}
+.parallax_6 {
+  right: -25px;
+}
+.parallax_6 img {
+  width: 77px;
+}
 .site-header {
   max-width: 960px;
   margin: 0 auto;
@@ -334,6 +390,9 @@ body::before {
   height: 100%;
   z-index: -10;
   background-color: rgba(255, 216, 0, 0.5);
+}
+.site {
+  overflow: hidden;
 }
 .index-hero-wrap {
   max-width: 960px;
