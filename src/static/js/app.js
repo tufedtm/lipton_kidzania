@@ -10,6 +10,10 @@ $(() => {
    * form styler
    */
   $('input[type=radio]').styler();
+  $('input[type=file]').styler({
+    filePlaceholder: '',
+    fileBrowse: 'Загрузить фото'
+  });
 
 
   /**
