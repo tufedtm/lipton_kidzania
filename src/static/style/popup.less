@@ -1,0 +1,239 @@
+.popup-wrap {
+  position: fixed;
+  bottom: 0;
+  display: none;
+  width: 100%;
+
+  background-color: #fff;
+  box-shadow: 1px 1px 21px rgba(0, 0, 0, .24);
+
+  &.active {
+    display: block;
+  }
+}
+
+.popup-content {
+  .container();
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  border: none;
+  background: none;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 50%;
+
+    width: 40px;
+    height: 1px;
+
+    background-color: @active-color;
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+}
+
+.popup-heading {
+  margin-bottom: 45px;
+
+  color: @active-color;
+  font-size: 45px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.popup-forms {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    margin: auto;
+
+    background-color: #cecece;
+  }
+
+  input {
+    margin-bottom: 20px;
+  }
+
+  [type=submit] {
+    margin-bottom: 0;
+  }
+
+}
+
+.popup-left,
+.popup-right {
+  position: relative;
+  max-width: 400px;
+}
+
+.reg-form {
+  input[type=email] {
+    width: 165px;
+  }
+  input[type=tel] {
+    width: 225px;
+    margin-left: 5px;
+  }
+}
+
+.auth-form {
+  a {
+    display: block;
+
+    color: @active-color;
+    text-align: right;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.popup-soc-auth {
+  .container(330px);
+  padding-top: 5px;
+
+  text-align: center;
+  border-top: 1px solid #cecece;
+
+  a {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    font-size: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:nth-of-type(1) {
+      margin-right: 15px;
+      background-color: #6695c9;
+      background-image: url(../img/vk.svg);
+    }
+
+    &:nth-of-type(2) {
+      margin-right: 15px;
+      background-color: #476096;
+      background-image: url(../img/fb.svg);
+    }
+
+    &:nth-of-type(3) {
+      background-color: #ff8300;
+      background-image: url(../img/ok.svg);
+    }
+  }
+}
+
+.reg-complete {
+  position: relative;
+  margin-bottom: 30px;
+  padding-top: 150px;
+
+  font-size: 22px;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+
+    background-image: url(../img/reg-complete.svg);
+
+  }
+}
+
+.cheque-reg__step {
+  margin-right: 10px;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.cheque-reg__shop-text {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 30px;
+
+  font-size: 22px;
+  text-indent: -30px;
+}
+
+.cheque-reg__shops {
+  display: flex;
+}
+
+.cheque-reg__shop {
+  text-align: center;
+
+  span {
+    display: flex;
+    align-items: flex-end;
+    height: 60px;
+  }
+}
+
+
+
+.cheque-reg__btn {
+  margin-top: 50px;
+  margin-left: auto;
+}
+
+.popup-heading--cheque-reg {
+  position: relative;
+  padding-left: 60px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: image-width('../img/cheque-reg.svg');
+    height: image-height('../img/cheque-reg.svg');
+
+    background-image: url(../img/cheque-reg.svg);
+  }
+
+}

@@ -15,12 +15,12 @@
 
   <nav class="header-nav {% block authenticated %}{% endblock %}">
     <ul>
-      <li><button class="header-nav__item">Регистрация чека</button></li>
+      <li><button class="header-nav__item" data-js-popup-link="cheque-reg">Регистрация чека</button></li>
       <li><a class="header-nav__item current" href="rules.html">Правила и призы</a></li>
       <li><a class="header-nav__item" href="faq.html">FAQ</a></li>
       <li><a class="header-nav__item" href="winners.html">Победители</a></li>
       <li>
-        <button class="header-nav__item">Вход</button>
+        <button class="header-nav__item" data-js-popup-link="auth-form">Вход</button>
         <span class="user-icon"></span>
       </li>
     </ul>
@@ -40,8 +40,14 @@
   </div>
 </footer>
 
+{% include 'pop-up/cheque-reg.html' %}
+{% include 'pop-up/auth.html' %}
+{% include 'pop-up/reg-complete.html' %}
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="static/lib/jquery.min.js"><\/script>')</script>
+<script src="static/lib/jquery.maskedinput.min.js"></script>
+<script src="static/lib/jquery.formstyler.min.js"></script>
 <script src="static/js/app.js"></script>
 
 </body>
